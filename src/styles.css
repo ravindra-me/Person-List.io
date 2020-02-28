@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.Person {
+  background: #eeeeee;
+  width: 17rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+.Person:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.Person img {
+  border-radius: 50%;
+  border: 0.1 solid red;
+}
+h4 {
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 786px) {
+  .Person-List {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .Person-List {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
